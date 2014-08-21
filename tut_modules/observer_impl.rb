@@ -1,0 +1,11 @@
+module Observable
+  def observers
+    @observer_list ||= []
+  end
+  def add_observer(obj)
+    @observer_list << obj
+  end
+  def notify_observers
+    observers.each { |o| o.update }
+  end
+end
