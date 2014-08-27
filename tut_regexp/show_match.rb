@@ -93,4 +93,4 @@ a = 'The moon is made of cheese'
 # Using as variables requires the literal regexp to appear on the left of the =~
 /(?<hour>\d{2}):(?<min>\d{2})(?<tz>..)/ =~ "12:50am"
 # puts "Hour is #{hour}, minute #{min}"
-puts "Hour is #{hour}, minute #{$2}. Timezone: #{$3}"
+# puts "Hour is #{hour}, minute #{$2}. Timezone: #{$3}"
